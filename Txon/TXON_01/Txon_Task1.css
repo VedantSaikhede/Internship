@@ -1,0 +1,108 @@
+    /*    
+      Internship Txon_Task1 (Landing Page)
+
+      #Name-Vedant Umesh Saikhede          */ 
+                 
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box ; 
+}
+
+:root{ 
+    --text:1.5rem;
+    --head: calc(1.5rem + 3rem);
+}
+body{
+   font-family: 'Roboto Slab', serif; ;
+}
+    
+
+.hero-section {
+    min-height:100vh;
+    background:
+    url(d839742a057e1d111d0373fa614de906.jpg) ;
+    background-repeat: no-repeat  ;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    animation: slide 1s ease-in-out;
+    
+  
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+   /* padding: 0rem 1rem;*/
+   padding-left: 20px;
+   padding-right: 30px;
+
+}
+
+.hero-text::before {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background:black ;
+    top: 0;
+    z-index:  -1;
+    opacity: 0.6;
+}
+
+
+.navbar ul {
+    list-style: none;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left : 3rem  ;
+    font-size: var(--text)
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.hero-text{
+    margin-top:30vh;
+color:rgb(255, 255, 255);
+height: 60vh;
+display: flex;
+
+flex-direction:column;
+align-items: center;
+
+}
+
+
+.hero-text a {
+    color:rgb(255, 255, 255); 
+    padding: 0.5rem  0.8rem;
+    background-color: rgb(209, 97, 18);
+    font-size: 900;
+    
+}
+
+.hero-text h2{
+font-size: var(--head) ;
+}
+.hero-text p{
+   
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+
+
